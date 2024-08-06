@@ -6,8 +6,8 @@ networks:
 
 services:
   client:
-    container_name: qbank-client
-    image: serendpty/edu-qbank-client-web:latest
+    container_name: web-page-analyzer-client-cdn
+    image: kosatnkn/web-page-analyzer-client-cdn:latest
     ports:
     - 3000:80
     networks:
@@ -15,8 +15,8 @@ services:
     depends_on:
     - api
   api:
-    container_name: qbank-api
-    image: serendpty/edu-qbank-api:latest
+    container_name: web-page-analyzer-api
+    image: kosatnkn/web-page-analyzer-api:latest
     ports:
     - 8080:8080
     - 8081:8081
