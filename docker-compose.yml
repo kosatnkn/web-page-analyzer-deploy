@@ -5,9 +5,9 @@ networks:
   main: {}
 
 services:
-  client:
-    container_name: web-page-analyzer-client-cdn
-    image: kosatnkn/web-page-analyzer-client-cdn:latest
+  clients:
+    container_name: web-page-analyzer-clients-cdn
+    image: kosatnkn/web-page-analyzer-clients-cdn:latest
     ports:
     - 3000:80
     networks:
