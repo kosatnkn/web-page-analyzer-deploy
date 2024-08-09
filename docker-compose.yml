@@ -6,8 +6,8 @@ networks:
 
 services:
   clients:
-    container_name: web-page-analyzer-clients-cdn
-    image: kosatnkn/web-page-analyzer-clients-cdn:latest
+    container_name: web-page-analyzer-client
+    image: kosatnkn/web-page-analyzer-client:latest
     ports:
     - 3000:80
     networks:
@@ -23,5 +23,5 @@ services:
     networks:
     - main
     volumes:
-    - ./api/configs:/opt/configs
+    - ./configs/api:/opt/configs
     restart: always
