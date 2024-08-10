@@ -1,5 +1,5 @@
 # ref: https://bytes.usc.edu/cs104/wiki/makefile
-.PHONY: up down docker_build_api docker_build_client docker_build_client_cdn
+.PHONY: up down docker_build_api docker_build_client
 
 up: docker_build_api docker_build_client
 	docker compose up --detach
