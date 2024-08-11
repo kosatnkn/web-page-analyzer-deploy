@@ -9,7 +9,7 @@ This will enable you to build and deploy the entire `Web Page Analyzer` with a s
 
 ## Configuring
 
-In order for the `Makefile` of this repository to access `Makefile`s of **Web Page Analyzer API** and **Web Page Analyzer Client**, all three repositories should reside within a single directory.
+In order for the `Makefile` of this repository to access `Makefiles` of **Web Page Analyzer API** and **Web Page Analyzer Client**, all three repositories should reside within a single directory.
 
 ```text
 <base_dir>
@@ -18,7 +18,7 @@ In order for the `Makefile` of this repository to access `Makefile`s of **Web Pa
 └── web-page-analyzer-deploy
 ```
 
-The `configs/api` directory holds configurations for the `web-page-analyzer-api`.
+The `configs/api` directory within the **Deployer Repository** (`web-page-analyzer-deploy`) holds configurations for the `web-page-analyzer-api`.
 
 There are sample config files already in place.
 
